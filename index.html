@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clothing Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Clothing Store</h2>
+        <p>Discover the latest trends in fashion.</p>
+    </section>
+    
+    <section id="shop">
+        <h2>Shop</h2>
+        <div class="product">
+            <img src="s1.jpg" alt="Saree">
+            <h3>Saree</h3>
+            <p>Price: $50</p>
+            <button onclick="addToCart('Saree', 50)">Add to Cart</button>
+        </div>
+        <!-- Add more products -->
+        
+            <div class="product">
+                <img src="s2.jpg" alt="Saree 2">
+                <h3>Saree 2</h3>
+                <p>Price: $60</p>
+                <button onclick="addToCart('Saree 2', 60)">Add to Cart</button>
+            </div>
+            <!-- Add more products -->
+        </section>
+        
+    </section>
+    
+    <section id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p>Total: <span id="cart-total">$0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clothing Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
